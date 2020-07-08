@@ -1,0 +1,26 @@
+p {
+	font-weight: bolder;
+	line-height: 2;
+	text-align: left;
+
+	border-left-color: blue;
+	font-family: 'Cormorant', serif;
+
+  	box-shadow:         3px 3px 5px 6px #ccc;
+  	padding: 1em;
+}
+
+h1 {
+	font-family: 'Cormorant', serif;
+}
+
+p:hover {
+	box-shadow: 0px 1px 20px 0px #0083ff4d;
+}
+
+h1, h2, h3, h4 {
+  voice-family: male;
+  richness: 80;
+  cue-before: url("beep.au")
+}
+

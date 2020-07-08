@@ -1,0 +1,32 @@
+table {
+	margin: 0 auto;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+td {
+	width: 100px;
+	height: 100px;
+}
+
+td:hover{
+	
+	box-shadow: 0px 1px 20px 0px #0083ff4d;
+	
+}
+
+tr:first-of-type td {
+	border-bottom: 1px solid black;
+}
+
+tr:nth-of-type(2) td {
+	border-bottom: 1px solid black;
+}
+
+tr td:nth-of-type(2) {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}

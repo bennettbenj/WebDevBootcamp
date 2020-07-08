@@ -1,0 +1,35 @@
+/*Element selector*/
+h1 {
+	color: white;
+}
+
+li {
+	
+	border: 8px solid rgb(00,00,ff);
+}
+
+h4 {
+	color: purple;
+	background: rgb(255,100,80);
+}
+
+body {
+	background: url(https://chicago.cbslocal.com/wp-content/uploads/sites/15116062/2019/11/Lightscape-20191117-RJC_7525-L.jpg);
+	
+	background-size: cover;
+}
+
+div {
+	background: yellow;
+}
+
+/*Id selector*/
+#laundry {
+	color: red;
+}
+/*Id selector*/
+.completed {
+	background: purple;
+	text-decoration: line-through;
+}
+

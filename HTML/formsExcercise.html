@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Excercise</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+	<div>
+		<label for="firstName">First Name: </label>
+		<input id="firstName" name="username" type="text" name="">
+		<label for="lastName">Last Name: </label>
+		<input id="lastName" name="username" type="text" name="">
+	</div>
+	<div>
+		<label for="male">Male</label>
+		<input name="gender" id="male" type="radio" name="">
+		<label for="female">Female</label>
+		<input name="gender" id="female"  type="radio" name="">
+		<label for="other">Other</label>	
+	</div>
+	<div>
+		<label for="email" >Email:</label>
+		<input id="email" type="email" name="email" placeholder="Email"required>
+		<label for="password">Password:</label>	
+		<input id="email" type="password" name="password" pattern="\w{5,10}" placeholder="Password" title="Must be between 5 and 10 characters" required>
+	</div>
+	<div>
+		<label for="dob">Birthday:</label>
+		<select id="dob" name="day">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<select id="dob" name="month">
+			<option>Month</option>
+			<option>January</option>
+			<option>February</option>
+			<option>March</option>
+			<option>April</option>
+		</select> 
+		<select select id="dob" name="year">
+			<option>Year</option>
+			<option>2015</option>
+			<option>2016</option>
+			<option>2017</option>
+			<option>2018</option>
+			<option>2019</option>
+			<option>2020</option>
+		</select>
+	</div>
+	<div>
+		<label for="checkbox">I agree to the terms and conditions</label>
+	<input id="checkbox" type="checkbox" name="terms" required>
+	</div>
+	<button>Submit</button>
+</form>
+
+</body>
+</html>
