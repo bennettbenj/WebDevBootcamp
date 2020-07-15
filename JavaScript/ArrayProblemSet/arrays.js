@@ -19,9 +19,9 @@ function printReverse(numsToReverse) {
 function isUniform(itemsToTest) {
     let firstItem = itemsToTest[0];
 
-    itemsToTest.forEach(function(item) {
-        if (item !== firstItem) return false;
-    });
+    for (let index = 1; index < itemsToTest.length; index++) {
+        if (itemsToTest[index] !== firstItem) return false;
+    }
     return true;
 }
 
