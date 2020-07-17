@@ -9,7 +9,7 @@ let winningScoreDisplay = document.querySelector("p span");
 let p1Score = 0;
 let p2Score = 0;
 let gameOver = false;
-let winningScore = 5;
+let winningScore = 3;
 
 p1Button.addEventListener("click", function() {
     if (!gameOver) {
@@ -34,6 +34,10 @@ p2Button.addEventListener("click", function() {
 });
 
 resetButton.addEventListener("click", function() {
+    reset();
+});
+
+function reset() {
     p1Score = 0;
     p2Score = 0;
     p1Display.textContent = p1Score;
@@ -41,10 +45,10 @@ resetButton.addEventListener("click", function() {
     p1Display.classList.remove("winner");
     p2Display.classList.remove("winner");
     gameOver = false;
-});
+}
 
-numInput.addEventListener("change", function() {
-    paragraph.textContent = "Value changed"
-    winningScore = this.value;
-    winningScoreDisplay = this.value;
+numInput.addEventListener("input", function() {
+    winningScoreDisplay.textContent = this.value;
+    winningScore = Number(this.value);
+    reset();
 })
