@@ -9,7 +9,7 @@
     <script type="text/paperscript" canvas="mycanvas">
 
         for (var y = 0; y < 1000; y+= 100) {
-            for (var x = 0; x < 1000; x+= 100) { var myCircle = new Path.Circle(new Point(x, y), 10); myCircle.fillColor= new Color(Math.random(), Math.random(), Math.random()) ; }      
+            for (var x = 0; x < 1000; x+= 100) { new Path.Circle(new Point(x, y), 10).fillColor = new Color(Math.random(), Math.random(), Math.random()) ; }      
         }
          </script>
             <title>Circles Exercise</title>
