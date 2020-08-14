@@ -1,5 +1,5 @@
 function echo(string, number) {
-    for (let x = 0; x < number; x++) {
+    for (let i = 0; i < number; i++) {
         console.log(string);   
     }
 }
